@@ -19,6 +19,23 @@
 7.	API key의 이름을 입력하고 “Create API Key” 버튼을 누릅니다.
     <img width="1949" alt="Screenshot 2024-07-26 at 4 23 46 PM" src="https://github.com/user-attachments/assets/5d586d42-c4c7-43fb-acdd-381cb12e0874">
 
-  8. API Key를 메모장에 복사해 둡니다.
+8. API Key를 메모장에 복사해 둡니다.
     <img width="1951" alt="Screenshot 2024-07-26 at 4 23 59 PM" src="https://github.com/user-attachments/assets/2127ad51-0b8f-44fd-96a6-1c469507f96a">
 
+9. 맥의 경우 Terminal을 윈도우의 경우 Powershell을 실행하고 apiKey를 export한다.
+￼<img width="1165" alt="Screenshot 2024-07-28 at 5 51 10 AM" src="https://github.com/user-attachments/assets/5f9fec28-004d-4806-9b71-ec63050641b2">
+
+10. 아래 curl 명령어와 위에 입력한 api key를 이용하여 “King”의 Text Embedding을 진행한다.
+curl https://api.voyageai.com/v1/embeddings   -H "Content-Type: application/json"   -H "Authorization: Bearer $apiKey"   -d '{
+    "input": "King",
+    "model": "voyage-2"
+  }'
+<img width="1791" alt="Screenshot 2024-07-28 at 5 56 54 AM" src="https://github.com/user-attachments/assets/14ccdc88-cfd4-4fd2-b518-934f8c76b791">
+
+11. curl 명령어와 위에 입력한 api key를 이용하여 “Queen”의 Text Embedding을 진행한다.
+<img width="1795" alt="Screenshot 2024-07-28 at 5 58 34 AM" src="https://github.com/user-attachments/assets/fc584420-146c-4292-aa49-39e867a24916">
+
+12. Cosine similarity를 알려주는 https://kutatua.com/statistics/cosine-similarity-bag-of-words 사이트로 이동하여 King, Queen의 embedding 값을 입력한다.
+￼<img width="1850" alt="Screenshot 2024-07-28 at 6 22 39 AM" src="https://github.com/user-attachments/assets/128bf663-2e17-40cc-aca8-99888baae141">
+
+13. King과 Queen의 cosine similarity 값은 99.89%로 매우 유사하다는 것을 알 수 있다.
