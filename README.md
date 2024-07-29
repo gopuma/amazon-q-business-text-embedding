@@ -35,7 +35,8 @@ curl https://api.voyageai.com/v1/embeddings   -H "Content-Type: application/json
 11. curl 명령어와 위에 입력한 api key를 이용하여 “Queen”의 Text Embedding을 진행한다.
 <img width="1795" alt="Screenshot 2024-07-28 at 5 58 34 AM" src="https://github.com/user-attachments/assets/fc584420-146c-4292-aa49-39e867a24916">
 
-12. Cosine similarity를 알려주는 https://kutatua.com/statistics/cosine-similarity-bag-of-words 사이트로 이동하여 King, Queen의 embedding 값을 입력한다.
-￼<img width="1850" alt="Screenshot 2024-07-28 at 6 22 39 AM" src="https://github.com/user-attachments/assets/128bf663-2e17-40cc-aca8-99888baae141">
+12. Cosine similarity를 알려주는 https://newtum.com/calculators/maths/cosine-similarity-calculator 사이트로 이동하여 King, Queen의 embedding 값을 입력한다.
+<img width="1225" alt="Screenshot 2024-07-29 at 9 07 43 AM" src="https://github.com/user-attachments/assets/4166f114-c08a-4b7b-8be5-63dbd4020cff">
 
-13. King과 Queen의 cosine similarity 값은 99.89%로 매우 유사하다는 것을 알 수 있다.
+
+13. King과 Queen의 cosine similarity 값은 95.21%로 매우 유사하다는 것을 알 수 있다.
